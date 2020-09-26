@@ -34,17 +34,20 @@ body {
     position: relative;
 }
 
-h1 {
-    font-family: 'Libre Baskerville', serif;
-    color: white;
-    font-size: 100px;
-}
-
-.rainbow .rocket {
+.rainbow {
     cursor: grab;
     cursor: -webkit-grab;
     cursor: -moz-grab;
     margin: 0;
     font-size: 300px;
+    z-index: 5;
+}
+
+.rocket {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    margin: 0;
+    font-size: 100px;
     z-index: 5;
 }

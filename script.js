@@ -64,7 +64,7 @@ listen(document, 'mouseup touchend')
             velocity: rocketXY.getVelocity(),
             to: { x: 0, y: 0 },
             stiffness: 300,
-            mass: 4,
+            mass: 1,
             damping: 10
         }).start(rocketXY);
     });
@@ -85,7 +85,7 @@ listen(document, 'mouseup touchend')
             from: girlXY.get(),
             velocity: girlXY.getVelocity(),
             to: { x: 0, y: 0 },
-            stiffness: 500,
+            stiffness: 100,
             mass: 5,
         }).start(girlXY);
     });

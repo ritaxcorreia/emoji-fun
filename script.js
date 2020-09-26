@@ -65,7 +65,7 @@ listen(document, 'mouseup touchend')
             to: { x: 0, y: 0 },
             stiffness: 300,
             mass: 1,
-            damping: 10
+            damping: 1,
         }).start(rocketXY);
     });
 
@@ -109,6 +109,7 @@ listen(document, 'mouseup touchend')
             to: { x: 0, y: 0 },
             stiffness: 500,
             mass: 5,
+            damping: 3,
         }).start(catXY);
     });
 

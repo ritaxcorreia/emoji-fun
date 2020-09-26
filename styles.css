@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    text-align: center;
+}
+
+.main-nav {
+    background-color: black;
+    margin: 0;
+    padding: 15px;
+}
+
+.unicorn {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    margin: 0;
+    font-size: 150px;
+    z-index: 10;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-size: 100px;
+}
+
+.rainbow .rocket {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    margin: 0;
+    font-size: 300px;
+    z-index: 5;
+}

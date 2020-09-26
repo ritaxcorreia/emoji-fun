@@ -10,11 +10,12 @@ body {
     text-align: center;
 }
 
-.p {
+
+/* .p {
     background-color: black;
     margin: 0;
     padding: 15px;
-}
+} */
 
 .unicorn {
     cursor: grab;
@@ -24,6 +25,7 @@ body {
     font-size: 120px;
     z-index: 10;
     position: relative;
+    padding: 20px;
 }
 
 .rainbow {

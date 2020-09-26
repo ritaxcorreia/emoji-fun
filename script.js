@@ -130,7 +130,7 @@ listen(document, 'mouseup touchend')
             velocity: dragonXY.getVelocity(),
             to: { x: 0, y: 0 },
             stiffness: 200,
-            mass: 1,
+            mass: 5,
         }).start(dragonXY);
     });
 

@@ -23,7 +23,7 @@ body {
     cursor: -webkit-grab;
     cursor: -moz-grab;
     margin: 0;
-    font-size: 120px;
+    font-size: 100px;
     z-index: 10;
     position: relative;
     padding: 20px;
@@ -34,7 +34,7 @@ body {
     cursor: -webkit-grab;
     cursor: -moz-grab;
     margin: 0;
-    font-size: 130px;
+    font-size: 100px;
     z-index: 5;
 }
 
@@ -62,7 +62,7 @@ body {
     cursor: -webkit-grab;
     cursor: -moz-grab;
     margin: 0;
-    font-size: 80px;
+    font-size: 100px;
     z-index: 10;
     position: relative;
 }
@@ -72,7 +72,7 @@ body {
     cursor: -webkit-grab;
     cursor: -moz-grab;
     margin: 0;
-    font-size: 90px;
+    font-size: 100px;
     z-index: 10;
     position: relative;
 }

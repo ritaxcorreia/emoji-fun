@@ -10,10 +10,18 @@ body {
     text-align: center;
 }
 
-.main-nav {
+.main-nav1 {
     background-color: black;
     margin: 0;
     padding: 15px;
+    display: inline;
+}
+
+.main-nav2 {
+    background-color: black;
+    margin: 0;
+    padding: 15px;
+    display: inline;
 }
 
 .unicorn {

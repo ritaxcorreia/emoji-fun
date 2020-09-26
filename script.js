@@ -155,6 +155,29 @@ listen(document, 'mouseup touchend')
         }).start(sunXY);
     });
 
+const lollipop = document.querySelector('.lollipop');
+const lollipopStyler = styler(lollipop);
+const lollipopXY = value({ x: 0, y: 0 }, lollipopStyler.set);
+
+listen(lollipop, 'mousedown touchstart')
+    .start((e) => {
+        e.preventDefault();
+        pointer(lollipopXY.get()).start(lollipopXY);
+    });
+
+listen(document, 'mouseup touchend')
+    .start(() => {
+        spring({
+            from: lollipopXY.get(),
+            velocity: lollipopXY.getVelocity(),
+            to: { x: 0, y: 0 },
+            stiffness: 400,
+            mass: 5,
+        }).start(lollipopXY);
+    });
+
+
+lollipop
 
 // //rainbow emoji physics
 // const { pipe, clampMax } = transform;

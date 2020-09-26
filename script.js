@@ -69,6 +69,93 @@ listen(document, 'mouseup touchend')
         }).start(rocketXY);
     });
 
+const girl = document.querySelector('.girl');
+const girlStyler = styler(girl);
+const girlXY = value({ x: 0, y: 0 }, girlStyler.set);
+
+listen(girl, 'mousedown touchstart')
+    .start((e) => {
+        e.preventDefault();
+        pointer(girlXY.get()).start(girlXY);
+    });
+
+listen(document, 'mouseup touchend')
+    .start(() => {
+        spring({
+            from: girlXY.get(),
+            velocity: girlXY.getVelocity(),
+            to: { x: 0, y: 0 },
+            stiffness: 500,
+            mass: 5,
+        }).start(girlXY);
+    });
+
+
+const cat = document.querySelector('.cat');
+const catStyler = styler(cat);
+const catXY = value({ x: 0, y: 0 }, catStyler.set);
+
+listen(cat, 'mousedown touchstart')
+    .start((e) => {
+        e.preventDefault();
+        pointer(catXY.get()).start(catXY);
+    });
+
+listen(document, 'mouseup touchend')
+    .start(() => {
+        spring({
+            from: catXY.get(),
+            velocity: catXY.getVelocity(),
+            to: { x: 0, y: 0 },
+            stiffness: 500,
+            mass: 5,
+        }).start(catXY);
+    });
+
+const dragon = document.querySelector('.dragon');
+const dragonStyler = styler(dragon);
+const dragonXY = value({ x: 0, y: 0 }, dragonStyler.set);
+
+listen(dragon, 'mousedown touchstart')
+    .start((e) => {
+        e.preventDefault();
+        pointer(dragonXY.get()).start(dragonXY);
+    });
+
+listen(document, 'mouseup touchend')
+    .start(() => {
+        spring({
+            from: dragonXY.get(),
+            velocity: dragonXY.getVelocity(),
+            to: { x: 0, y: 0 },
+            stiffness: 200,
+            mass: 1,
+        }).start(dragonXY);
+    });
+
+
+const sun = document.querySelector('.sun');
+const sunStyler = styler(sun);
+const sunXY = value({ x: 0, y: 0 }, sunStyler.set);
+
+listen(sun, 'mousedown touchstart')
+    .start((e) => {
+        e.preventDefault();
+        pointer(sunXY.get()).start(sunXY);
+    });
+
+listen(document, 'mouseup touchend')
+    .start(() => {
+        spring({
+            from: sunXY.get(),
+            velocity: sunXY.getVelocity(),
+            to: { x: 0, y: 0 },
+            stiffness: 200,
+            mass: 8,
+        }).start(sunXY);
+    });
+
+
 // //rainbow emoji physics
 // const { pipe, clampMax } = transform;
 

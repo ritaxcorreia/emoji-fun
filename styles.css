@@ -86,3 +86,13 @@ body {
     z-index: 10;
     position: relative;
 }
+
+.lollipop {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    margin: 0;
+    font-size: 100px;
+    z-index: 10;
+    position: relative;
+}

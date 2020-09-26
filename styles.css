@@ -10,18 +10,10 @@ body {
     text-align: center;
 }
 
-.main-nav1 {
+.p {
     background-color: black;
     margin: 0;
     padding: 15px;
-    display: inline;
-}
-
-.main-nav2 {
-    background-color: black;
-    margin: 0;
-    padding: 15px;
-    display: inline;
 }
 
 .unicorn {
@@ -29,7 +21,7 @@ body {
     cursor: -webkit-grab;
     cursor: -moz-grab;
     margin: 0;
-    font-size: 150px;
+    font-size: 120px;
     z-index: 10;
     position: relative;
 }
@@ -39,7 +31,7 @@ body {
     cursor: -webkit-grab;
     cursor: -moz-grab;
     margin: 0;
-    font-size: 300px;
+    font-size: 130px;
     z-index: 5;
 }
 
@@ -50,4 +42,44 @@ body {
     margin: 0;
     font-size: 100px;
     z-index: 5;
+}
+
+.girl {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    margin: 0;
+    font-size: 100px;
+    z-index: 10;
+    position: relative;
+}
+
+.cat {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    margin: 0;
+    font-size: 80px;
+    z-index: 10;
+    position: relative;
+}
+
+.dragon {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    margin: 0;
+    font-size: 90px;
+    z-index: 10;
+    position: relative;
+}
+
+.sun {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    margin: 0;
+    font-size: 100px;
+    z-index: 10;
+    position: relative;
 }
